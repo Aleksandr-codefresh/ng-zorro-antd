@@ -36,177 +36,108 @@
 @dust-red-9: #F89F9A;
 @dust-red-10: #FAC8C3;
 
-// Buttons
-@primary-color: @primary-green-5;
-@btn-primary-color: @natural-8;
-@btn-border-radius-base: 4px;
-@btn-border-radius-sm: 4px;
-
-
 @height-base: 36px;
 @height-lg: 44px;
 @height-sm: 28px;
-
 @border-radius-base: 4px;
 @border-radius-sm: 4px;
-
-
-@btn-padding-horizontal-base: 16px;
-@btn-padding-horizontal-lg: @btn-padding-horizontal-base;
-@btn-padding-horizontal-sm: 12px;
-
-@btn-font-size-lg: @font-size-lg;
-@btn-font-size-sm: @font-size-base;
-
+@primary-color: @primary-green-5;
 @font-size-base: 14px;
 @font-size-lg: @font-size-base + 2px;
 @font-size-sm: @font-size-base;
-
 @body-background: @natural-8;
 @component-background: @natural-8;
-
 @disabled-color: @natural-3;
 @disabled-bg: @primary-green-1;
+@error-color: @dust-red-7;
+@text-color-inverse: @natural-8;
+@border-color-base: @natural-3;
+@outline-color: @natural-1;
+@item-hover-bg: @natural-25;
+@popover-background: @natural-4;
+@heading-color: @gray-1;
 
+// Buttons
 
+@btn-primary-color: @natural-8;
+@btn-border-radius-base: 4px;
+@btn-border-radius-sm: 4px;
+@btn-padding-horizontal-base: 16px;
+@btn-padding-horizontal-lg: @btn-padding-horizontal-base;
+@btn-padding-horizontal-sm: 12px;
+@btn-font-size-lg: @font-size-lg;
+@btn-font-size-sm: @font-size-base;
 @btn-default-color: @gray-1;
 @btn-default-bg: @natural-4;
 @btn-default-border: transparent;
-
 @btn-ghost-color: @natural-2;
 @btn-ghost-border: @natural-2;
-
 @btn-default-ghost-color: @natural-2;
 @btn-default-ghost-bg: transparent;
 @btn-default-ghost-border: @natural-2;
-
 @btn-danger-color: @gray-1;
 @btn-danger-bg: @dust-red-7;
-@error-color: @dust-red-7;
-
-
 
 // Input
-//
-@border-color-base: @natural-3;
+
 @input-placeholder-color: @natural-2;
 @input-color: @gray-1;
 @input-icon-color: @natural-2;
 @input-bg: @natural-5;
-
 @input-hover-border-color: @natural-2;
 @input-disabled-bg: @natural-4;
-
 @input-icon-hover-color: @input-icon-color;
 @input-disabled-color: @natural-11;
-@outline-color: @natural-1;
-
-
-@text-color-inverse: @natural-8;
-// @text-selection-bg: ;
+@tabs-horizontal-padding: @padding-sm;
 @input-number-handler-hover-bg: @gray-1;
-
 @input-addon-bg: @natural-3;
-
-
 @input-number-handler-active-bg: @natural-1;
-// @input-number-handler-bg: @component-background;
-// @input-number-handler-border-color: @border-color-base;
-// @input-outline-offset: 0 0;
-
-
-
 
 // Select
-// ---
 
-
-
-@item-hover-bg: @natural-25;
 @select-item-selected-color: @natural-8;
 @select-item-selected-bg: @primary-green-5;
-
 @select-item-selected-font-weight: 300;
-
 @select-dropdown-bg: @natural-5;
 @select-dropdown-height: 36px;
 @select-multiple-item-height-lg: 36px;
 @select-single-item-height-lg: 44px;
 
-
-@tabs-horizontal-padding: @padding-sm;
+// Tabs
 @tabs-horizontal-padding-lg: @padding-md;
 @tabs-horizontal-padding-sm: @padding-xs;
 
-
-
-
-
 // Table
-// --
-// @table-bg: @component-background;
-@heading-color: @gray-1;
-@table-header-bg: @natural-3;
-// @table-header-color: @;
 
+@table-header-bg: @natural-3;
 @table-header-sort-bg: @natural-2;
 @table-row-hover-bg: @natural-4;
 @table-bg: @natural-5;
-
-
 @table-header-sort-active-bg: @natural-5;
 @table-header-sort-active-filter-bg: @natural-5;
 @table-header-filter-active-bg: @natural-25;
 @table-header-icon-color: @gray-1;
-// @text-color-secondary: green;
-
-
-
-// @table-body-selected-sort-bg: @table-selected-row-bg;
-// @table-selected-row-hover-bg: darken(@table-selected-row-bg, 2%);
-// @table-expanded-row-bg: #fbfbfb;
-// @table-padding-vertical: 16px;
-// @table-padding-horizontal: 16px;
-// @table-padding-vertical-md: (@table-padding-vertical * 3 / 4);
-// @table-padding-horizontal-md: (@table-padding-horizontal / 2);
-// @table-padding-vertical-sm: (@table-padding-vertical / 2);
-// @table-padding-horizontal-sm: (@table-padding-horizontal / 2);
-// @table-border-color: @border-color-split;
-// @table-border-radius-base: @border-radius-base;
-// @table-footer-bg: @background-color-light;
-// @table-footer-color: @heading-color;
-// @table-header-bg-sm: @table-header-bg;
-// @table-font-size: @font-size-base;
-// @table-font-size-md: @table-font-size;
-// @table-font-size-sm: @table-font-size;
-// Sorter
-// Legacy: `table-header-sort-active-bg` is used for hover not real active
-// @table-header-sort-active-bg: darken(@table-header-bg, 3%);
-// Filter
-// @table-header-filter-active-bg: darken(@table-header-sort-active-bg, 5%);
-// @table-filter-btns-bg: inherit;
-// @table-filter-dropdown-bg: @component-background;
-// @table-expand-icon-bg: @component-background;
-// @table-selection-column-width: 32px;
-// Sticky
-// @table-sticky-scroll-bar-bg: fade(#000, 35%);
-// @table-sticky-scroll-bar-radius: 4px;
-
 
 // Checkbox
+
 @checkbox-check-color: @natural-5;
 @checkbox-check-bg: @natural-5;
-// @checkbox-border-width: @border-width-base;
-// @checkbox-group-item-margin-right: 8px;
-
 
 // Radio
+
 @radio-solid-checked-color: @natural-5;
 @radio-disabled-button-checked-color: @natural-5;
-// @radio-disabled-button-checked-bg: yellow;
-@popover-background: @natural-4;
+
+// Menu
+
 @menu-dark-highlight-color: @primary-green-5;
 @menu-dark-selected-item-icon-color: @primary-green-5;
 @menu-dark-selected-item-text-color: @primary-green-5;
 @menu-dark-item-active-bg: @primary-1;
+
+// Switch
+@switch-bg: @natural-8;
+
+
+
 
