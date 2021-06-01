@@ -37,11 +37,11 @@ export class NzTreeView<T> extends CdkTree<T> implements OnInit, OnDestroy {
   _dataSourceChanged = new Subject<void>();
   @Input('nzTreeControl') treeControl!: TreeControl<T, NzSafeAny>;
   @Input('nzDataSource')
-  get dataSource(): DataSource<T> | Observable<T[]> | T[] {
-    return super.dataSource;
+  get ds(): DataSource<T> | Observable<T[]> | T[] {
+    return this.dataSource;
   }
-  set dataSource(dataSource: DataSource<T> | Observable<T[]> | T[]) {
-    super.dataSource = dataSource;
+  set ds(dataSource: DataSource<T> | Observable<T[]> | T[]) {
+    this.dataSource = dataSource;
   }
   @Input() @InputBoolean() nzDirectoryTree = false;
   @Input() @InputBoolean() nzBlockNode = false;
